@@ -26,7 +26,7 @@ final class GleanManager: GleanManaging {
         Glean.shared.setDebugViewTag("tiktokreport-iOS")
         Glean.shared.setLogPings(true)
 
-////        Glean.shared.registerPings(GleanMetrics.Pings.shared)
+//        Glean.shared.registerPings(GleanMetrics.Pings.shared)
     }
 
     // MARK: - Setup
@@ -42,35 +42,35 @@ final class GleanManager: GleanManaging {
         let dataPath = appGroupContainer.path + "/glean_data"
         
         let configuration = Configuration(dataPath: dataPath)
-////        Glean.shared.initialize(uploadEnabled: true, configuration: configuration, buildInfo: GleanMetrics.GleanBuild.info)
+        Glean.shared.initialize(uploadEnabled: true, configuration: configuration, buildInfo: GleanMetrics.GleanBuild.info)
     }
 
     // MARK: - Email
 
     func setEmail(_ email: String, identifier: UUID) {
-////        GleanMetrics.Email.email.set(email)
-////        GleanMetrics.Email.identifier.set(identifier)
+        GleanMetrics.Email.email.set(email)
+        GleanMetrics.Email.identifier.set(identifier)
     }
 
     // MARK: - Fields
 
     func setFields(_ fields: String, identifier: UUID) {
-////        GleanMetrics.TiktokReport.fields.set(fields)
-////        GleanMetrics.TiktokReport.identifier.set(identifier)
+        GleanMetrics.TiktokReport.fields.set(fields)
+        GleanMetrics.TiktokReport.identifier.set(identifier)
     }
 
     // MARK: - Screen Recording
 
     func setScreenRecording(_ screenRecording: String, identifier: UUID) {
-////        GleanMetrics.TiktokScreenRecording.data.set(screenRecording)
-////        GleanMetrics.TiktokScreenRecording.identifier.set(identifier)
+        GleanMetrics.TiktokScreenRecording.data.set(screenRecording)
+        GleanMetrics.TiktokScreenRecording.identifier.set(identifier)
     }
 
     // MARK: - Download Data
 
     func setDownloadData(email: String, identifier: UUID) {
-////        GleanMetrics.DownloadData.email.set(email)
-////        GleanMetrics.DownloadData.identifier.set(identifier)
+        GleanMetrics.DownloadData.email.set(email)
+        GleanMetrics.DownloadData.identifier.set(identifier)
     }
 
     // MARK: - Delete Data
@@ -83,7 +83,7 @@ final class GleanManager: GleanManaging {
     // MARK: - Submit
 
     func submit() {
-//        GleanMetrics.Pings.shared.tiktokReport.submit()
+        GleanMetrics.Pings.shared.tiktokReport.submit()
     }
 }
 
