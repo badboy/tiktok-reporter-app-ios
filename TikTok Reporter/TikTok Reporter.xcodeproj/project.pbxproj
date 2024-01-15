@@ -1204,7 +1204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"CUSTOM SCRIPT > source root > ${SOURCE_ROOT}\"\n";
+			shellScript = "echo \"CUSTOM SCRIPT > source root > ${SOURCE_ROOT}\" \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
