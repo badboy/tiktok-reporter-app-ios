@@ -960,6 +960,7 @@
 				68CBF9632AEB9F2F006D03FC /* Resources */,
 				68FA99582B0BA34400D65D43 /* Embed Foundation Extensions */,
 				684E2F322B1F2795006A05C8 /* ShellScript */,
+				A923DCDB2B553EF5009E2DF7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1187,6 +1188,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"$PWD/sdk_generator.sh\" --output \"$PWD/TikTok ReporterShare/Generated\"\n";
+		};
+		A923DCDB2B553EF5009E2DF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"CUSTOM SCRIPT > source root > ${SOURCE_ROOT}\"\n\n\n\n\n\n\n\n\n\n\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
