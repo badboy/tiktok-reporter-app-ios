@@ -11,7 +11,6 @@
 		681A89F42B16904F00FD1CAB /* VideoEditorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A89F32B16904F00FD1CAB /* VideoEditorDelegate.swift */; };
 		681A89F62B16934200FD1CAB /* Enabling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A89F52B16934200FD1CAB /* Enabling.swift */; };
 		681A89F82B176EB000FD1CAB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A89F72B176EB000FD1CAB /* ErrorView.swift */; };
-		6823D9EA2B3180810086F485 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823D9E92B3180810086F485 /* Metrics.swift */; };
 		6823D9ED2B31808A0086F485 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823D9EC2B31808A0086F485 /* Metrics.swift */; };
 		684A23ED2B178D93001B83AA /* FormTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A23EC2B178D93001B83AA /* FormTab.swift */; };
 		684A23F02B178F12001B83AA /* SubmissionSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A23EF2B178F12001B83AA /* SubmissionSuccessView.swift */; };
@@ -136,6 +135,7 @@
 		68FA99502B0BA34400D65D43 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA994F2B0BA34400D65D43 /* ShareViewController.swift */; };
 		68FA99572B0BA34400D65D43 /* TikTok ReporterShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68FA994D2B0BA34400D65D43 /* TikTok ReporterShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		68FB5B6B2B28865A003FF139 /* DataHandlingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FB5B6A2B28865A003FF139 /* DataHandlingViewModel.swift */; };
+		A923DCDF2B557DC0009E2DF7 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A923DCDE2B557DC0009E2DF7 /* Metrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,7 +197,6 @@
 		681A89F32B16904F00FD1CAB /* VideoEditorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorDelegate.swift; sourceTree = "<group>"; };
 		681A89F52B16934200FD1CAB /* Enabling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enabling.swift; sourceTree = "<group>"; };
 		681A89F72B176EB000FD1CAB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		6823D9E92B3180810086F485 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 		6823D9EC2B31808A0086F485 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 		683A20442B0BB70F006F8AE5 /* TikTok Reporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TikTok Reporter.entitlements"; sourceTree = "<group>"; };
 		683A20452B0BB7A7006F8AE5 /* TikTok ReporterShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TikTok ReporterShare.entitlements"; sourceTree = "<group>"; };
@@ -304,6 +303,7 @@
 		68FA994F2B0BA34400D65D43 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		68FA99542B0BA34400D65D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FB5B6A2B28865A003FF139 /* DataHandlingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandlingViewModel.swift; sourceTree = "<group>"; };
+		A923DCDE2B557DC0009E2DF7 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,14 +364,6 @@
 				681A89F32B16904F00FD1CAB /* VideoEditorDelegate.swift */,
 			);
 			path = VideoEditor;
-			sourceTree = "<group>";
-		};
-		6823D9E82B3180810086F485 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				6823D9E92B3180810086F485 /* Metrics.swift */,
-			);
-			path = Generated;
 			sourceTree = "<group>";
 		};
 		6823D9EB2B31808A0086F485 /* Generated */ = {
@@ -822,7 +814,7 @@
 		68CBF9672AEB9F2F006D03FC /* TikTok Reporter */ = {
 			isa = PBXGroup;
 			children = (
-				6823D9E82B3180810086F485 /* Generated */,
+				A923DCDD2B557DC0009E2DF7 /* Generated */,
 				683A20442B0BB70F006F8AE5 /* TikTok Reporter.entitlements */,
 				689FF08B2AFD4EBD00C9FE51 /* Managers */,
 				689FF0882AFD410700C9FE51 /* Helpers */,
@@ -914,6 +906,14 @@
 			path = "TikTok ReporterShare";
 			sourceTree = "<group>";
 		};
+		A923DCDD2B557DC0009E2DF7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A923DCDE2B557DC0009E2DF7 /* Metrics.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -955,12 +955,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68CBF9892AEB9F31006D03FC /* Build configuration list for PBXNativeTarget "TikTok Reporter" */;
 			buildPhases = (
+				A923DCDC2B556D20009E2DF7 /* ShellScript */,
 				68CBF9612AEB9F2F006D03FC /* Sources */,
 				68CBF9622AEB9F2F006D03FC /* Frameworks */,
 				68CBF9632AEB9F2F006D03FC /* Resources */,
 				68FA99582B0BA34400D65D43 /* Embed Foundation Extensions */,
-				684E2F322B1F2795006A05C8 /* ShellScript */,
-				A923DCDB2B553EF5009E2DF7 /* ShellScript */,
+				684E2F322B1F2795006A05C8 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -1151,7 +1151,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		684E2F322B1F2795006A05C8 /* ShellScript */ = {
+		684E2F322B1F2795006A05C8 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1162,6 +1162,7 @@
 				"$(SRCROOT)/metrics.yaml",
 				"$(SRCROOT)/pings.yaml",
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -1189,7 +1190,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"$PWD/sdk_generator.sh\" --output \"$PWD/TikTok ReporterShare/Generated\"\n";
 		};
-		A923DCDB2B553EF5009E2DF7 /* ShellScript */ = {
+		A923DCDC2B556D20009E2DF7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1204,7 +1205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"CUSTOM SCRIPT > source root > ${SOURCE_ROOT}\" \n";
+			shellScript = "declare -i lineNumbers\nlineNumbers=(29 45 51 52 58 59 65 66 72 73 86)\n\nMANAGER_ROOT=\"${SRCROOT}/${PROJECT_NAME}/Managers/\"\n#GleanManager.swift\"\n#sed -i '5s/^/\\/\\//' filename.txt\n\n\necho \"GLEAN MANAGER PATH > ${MANAGER_ROOT}\"\n\ncd \"${MANAGER_ROOT}\"\n\n#cat \"GleanManager.swift\"\n\nMANAGER_FILE_NAME=\"GleanManager.swift\"\n\necho \"current directory > ${pwd}\"\n\nfor lineNumber in \"${lineNumbers[@]}\"; do\n    echo \"Line Number > ${lineNumber}\"\n    #COMMAND_STRING=\"sed -i '${lineNumber}s/^/\\/\\//' GleanManager.swift\"\n    #sed -i '${lineNumber}s/^/\\/\\//' \"GleanManager.swift\"\n    #sed -i \"${lineNumber}s/^/\\/\\//\" \"GleanManager.swift\"\n    \n    sed -i '' \"${lineNumber}s/^/\\/\\//\" \"GleanManager.swift\"\n    \n    #sed -i -e '5,10s/^/#/' \"GleanManager.swift\"\n    #sed -i \"${lineNumber}s/^/\\/\\//\" ${MANAGER_ROOT}\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1238,7 +1239,7 @@
 				684E2F422B2313BC006A05C8 /* MultipartRequest.swift in Sources */,
 				689FF0872AFD379200C9FE51 /* FormInputField.swift in Sources */,
 				689FF0752AFA2C9200C9FE51 /* OnboardingFormView.swift in Sources */,
-				6823D9EA2B3180810086F485 /* Metrics.swift in Sources */,
+				A923DCDF2B557DC0009E2DF7 /* Metrics.swift in Sources */,
 				684E2F3A2B21F048006A05C8 /* RecordViewModel.swift in Sources */,
 				689FF0622AF5153200C9FE51 /* RadioButton.swift in Sources */,
 				684E2F462B23332F006A05C8 /* RecordingStorage.swift in Sources */,
